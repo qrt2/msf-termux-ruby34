@@ -29,6 +29,7 @@ pkg install wget -y && wget https://raw.githubusercontent.com/qrt2/msf-termux-ru
 ​Espaço: Aproximadamente 1.5GB de memória livre.
 ​Internet: Conexão estável para baixar as Gems.
 ​🤝 Créditos
-​Desenvolvido por Cyber.
-Contato: t.me/cybe4
-Focado em resolver problemas de compatibilidade da comunidade Termux-Hacking.
+​Desenvolvido por: Cyber.
+​Contato: t.me/cybe4
+​Foco: Resolver problemas de compatibilidade da comunidade Termux-Hacking.
+​<!-- end list -->
