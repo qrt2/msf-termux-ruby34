@@ -22,6 +22,7 @@ Copie e cole o comando abaixo no seu Termux:
 
 ```bash
 pkg install wget -y && wget [https://raw.githubusercontent.com/qrt2/msf-termux-ruby34/main/instalar_msf.sh](https://raw.githubusercontent.com/qrt2/msf-termux-ruby34/main/instalar_msf.sh) && chmod +x instalar_msf.sh && ./instalar_msf.sh
+```
 
 
 
