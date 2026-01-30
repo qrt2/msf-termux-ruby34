@@ -75,13 +75,22 @@ fix_bin() {
 }
 
 db_meta() {
-    echo -e "${am} Inicializando Banco de Dados...";sleep 0.5
-    initdb $PREFIX/var/lib/postgresql 2>/dev/null
-    pg_ctl -D $PREFIX/var/lib/postgresql start 2>/dev/null
-    createdb msf_db 2>/dev/null
-    echo -e "\n ${az} Configurando conexão automática do banco...${reset}";sleep 0.5
-    mkdir -p $PREFIX/opt/metasploit-framework/config
-    cat <<EOF > $PREFIX/opt/metasploit-framework/config/database.yml
+echo -e "${am} Inicializando Banco de Dados...";sleep 0.5
+# Limpeza total silenciosa para evitar erros de 'relation sessions'
+rm -rf $PREFIX/var/lib/postgresql > /dev/null 2>&1
+
+# Inicializa e inicia o serviço ocultando toda a saída
+initdb $PREFIX/var/lib/postgresql > /dev/null 2>&1
+pg_ctl -D $PREFIX/var/lib/postgresql start > /dev/null 2>&1
+
+# Cria o banco de dados
+createdb msf_db > /dev/null 2>&1
+
+echo -e "\n ${az} Configurando conexão automática do banco...${reset}";sleep 0.5
+mkdir -p $PREFIX/opt/metasploit-framework/config > /dev/null 2>&1
+
+# Cria o arquivo de configuração YAML
+cat <<EOF > $PREFIX/opt/metasploit-framework/config/database.yml
 production:
   adapter: postgresql
   database: msf_db
@@ -91,6 +100,7 @@ production:
   pool: 5
   timeout: 5
 EOF
+
     echo -e "${az}"
     print_center "-------------------------------------------------------" "${az}"
     print_center " INSTALAÇÃO CONCLUÍDA COM SUCESSO!" "${vd}"
