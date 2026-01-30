@@ -44,7 +44,10 @@ limpeza() {
 
 dep() {
     echo -e "${az} Instalando dependências..."
-    pkg update -y && pkg upgrade -y && pkg install ruby git wget curl nodejs python ncurses-utils openssl libffi libiconv libxml2 libxslt libsqlite postgresql build-essential binutils readline libpcap -y 2>/dev/null
+    # Atualizando o sistema sem perguntas chatas
+pkg update -y
+pkg upgrade -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
+pkg upgrade -y && pkg install ruby git wget curl nodejs python ncurses-utils openssl libffi libiconv libxml2 libxslt libsqlite postgresql build-essential binutils readline libpcap -y 2>/dev/null
 }
 
 patch() {
