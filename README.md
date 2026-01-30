@@ -20,8 +20,7 @@ Recentemente, a atualização do Ruby para a versão 3.4.0 quebrou a instalaçã
 
 Copie e cole o comando abaixo no seu Termux:
 
-```bash
-pkg install wget -y && wget https://raw.githubusercontent.com/qrt2/msf-termux-ruby34/main/instalar_msf.sh && chmod +x instalar_msf.sh && ./instalar_msf.sh ```
+pkg install wget -y && wget https://raw.githubusercontent.com/qrt2/msf-termux-ruby34/main/instalar_msf.sh && chmod +x instalar_msf.sh && ./instalar_msf.sh 
 
 
 🖥️ Requisitos
@@ -32,4 +31,3 @@ pkg install wget -y && wget https://raw.githubusercontent.com/qrt2/msf-termux-ru
 ​Desenvolvido por: Cyber.
 ​Contato: t.me/cybe4
 ​Foco: Resolver problemas de compatibilidade da comunidade Termux-Hacking.
-​<!-- end list -->
