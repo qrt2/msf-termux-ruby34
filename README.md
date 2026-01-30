@@ -30,7 +30,7 @@ pkg install wget -y && wget https://raw.githubusercontent.com/qrt2/msf-termux-ru
 
 ​Internet: Conexão estável para baixar as Gems.
 
-​🤝 Créditos: ​Desenvolvido por: Cyber.
+​🤝 ​Desenvolvido por: Cyber.
 
 ​Contato: t.me/cybe4
 
