@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.png" width="100%">
+</p>
+
 # 🛡️ Metasploit Framework Installer for Termux (Ruby 3.4.0 Fix)
 
 ![Termux](https://img.shields.io/badge/Termux-OS-black?style=for-the-badge&logo=termux)
