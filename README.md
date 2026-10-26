@@ -36,7 +36,9 @@ pkg install wget -y && wget -q -O msf_install.sh https://raw.githubusercontent.c
 
 ​ ​Desenvolvido por: Cyber.
 
-​doaçoes/contato: t.me/cybe4
+## 💬 Doações & Contato / Contact & Donations
+
+[![Telegram](https://img.shields.io/badge/Telegram-Contact%20%26%20Donations-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/cybe4)
 
 ​Foco: Resolver problemas de compatibilidade da 
 comunidade Termux-Hacking.
