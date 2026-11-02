@@ -8,20 +8,6 @@
 ![Ruby](https://img.shields.io/badge/Ruby-3.4.0-red?style=for-the-badge&logo=ruby)
 ![Status](https://img.shields.io/badge/Status-Stable-green?style=for-the-badge)
 
-<p align="center">
-  <img src="https://i.ibb.co/CK9CHpWj/Screenshot-20261102-110206-Termux.jpg" alt="BeEF no Termux" width="350">
-</p>
-
-<p align="center">
-  <img src="https://i.ibb.co/CK9CHpWj/Screenshot-20261102-110206-Termux.jpg](https://i.ibb.co/TBVCtJhL/Screenshot-20261102-110807-Via.jpg" alt="BeEF no Termux" width="350">
-</p>
-
-<p align="center">
-  <img src="https://i.ibb.co/3YQkSTYZ/Screenshot-20261102-122728-Termux.jpg" alt="BeEF no Termux" width="350">
-</p>
-
-
-
 Este script automatiza a instalação completa do **Metasploit Framework** no Termux. O diferencial deste instalador é a correção do erro crítico de compilação da Gem **Nokogiri** e outras extensões nativas que surgiram com a atualização do **Ruby 3.4.0**.
 
 ## O que este script resolve?
